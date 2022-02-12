@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Task List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body onload="CloneTask()">
+<div class="root">
+	<div class="app">
+		<h3>Task list</h3>
+		<div class="first">
+			<input type="text" name="" placeholder="Enter text..." id="taskText">
+			<button id="add" onclick="AddTask()">ADD TASK</button>
+			<br>
+			<button class="white" onclick="RemoveAll()">remove all</button>
+			<button class="white" onclick="ReadyAll()">ready all</button>
+		</div>
+		<div id="second">
+			<div class="task">
+				<div class="circle"></div>
+				<p>I know... I'm trying to get funds.</p>
+				<button class="white" name="ready">ready</button>
+				<button class="white" name="del">delete</button>
+			</div>
+			<div class="task">
+				<div class="circle"></div>
+				<p>I-m looking for tip's around capturing the milky way.</p>
+				<button class="white" name="ready">ready</button>
+				<button class="white" name="del">delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
